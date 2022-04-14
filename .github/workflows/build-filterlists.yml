@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   
   schedule:
-  - cron: "0 15 * * *"
+  - cron: "0 0 * * *"
 
   workflow_dispatch:
 
@@ -21,6 +21,14 @@ jobs:
 
     - name: Download repo
       uses: actions/checkout@v2
+
+    - name: update submodules
+      run: git submodule foreach git pull
+
+    - name: add quarklist
+      run: |
+        cp dist/quarklist.txt lists/quarklist.txt
+        ls -alh lists/*.txt
 
     - name: Download dependencies
       run: |

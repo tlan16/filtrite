@@ -5,3 +5,7 @@ deps/
 logs/
 dist/
 release.md
+
+# Webstorm
+*/.idea/workspace.xml
+*/.idea/tasks.xml
