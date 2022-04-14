@@ -22,11 +22,6 @@ jobs:
     - name: Download repo
       uses: actions/checkout@v2
 
-    - name: Add quarklist
-      run: |
-        wget -O ./lists/quarklist.txt "https://raw.githubusercontent.com/francis-zhao/quarklist/master/dist/quarklist.txt"
-        ls -alh ./lists/*.txt
-
     - name: Download dependencies
       run: |
         go get -v -t -d ./...

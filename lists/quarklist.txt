@@ -1,0 +1,2 @@
+https://easylist.to/easylist/easylist.txt
+https://raw.githubusercontent.com/francis-zhao/quarklist/master/dist/quarklist.txt
