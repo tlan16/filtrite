@@ -22,13 +22,10 @@ jobs:
     - name: Download repo
       uses: actions/checkout@v2
 
-    - name: Update submodules
-      run: git submodule foreach git pull
-
     - name: Add quarklist
       run: |
-        cp ./quarklist/dist/quarklist.txt ./lists/quarklist.txt
-        ls -alh lists/*.txt
+        wget -O ./lists/quarklist.txt "https://raw.githubusercontent.com/francis-zhao/quarklist/master/dist/quarklist.txt"
+        ls -alh ./lists/*.txt
 
     - name: Download dependencies
       run: |
