@@ -22,12 +22,12 @@ jobs:
     - name: Download repo
       uses: actions/checkout@v2
 
-    - name: update submodules
+    - name: Update submodules
       run: git submodule foreach git pull
 
-    - name: add quarklist
+    - name: Add quarklist
       run: |
-        cp dist/quarklist.txt lists/quarklist.txt
+        cp ./quarklist/dist/quarklist.txt ./lists/quarklist.txt
         ls -alh lists/*.txt
 
     - name: Download dependencies
