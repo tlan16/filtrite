@@ -46,7 +46,7 @@ https://raw.githubusercontent.com/xarantolus/nervig/main/annoyances.txt
 # ----------------------------------
 # Now some region-specific lists
 # ----------------------------------
-https://raw.githubusercontent.com/francis-zhao/quarklist/master/dist/quarklist.txt
-https://easylist.to/easylistgermany/easylistgermany.txt
+https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
 
 # Adguard lists from https://github.com/AdguardTeam/AdguardFilters
+https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt
